@@ -4,13 +4,16 @@
 
 任何类名都应该使用 UpperCamelCase （驼峰法）命名, 例如:
 
-  AndroidActivity, NetworkHelper, UserFragment, PerActivity
+AndroidActivity, NetworkHelper, UserFragment, PerActivity
+
 1.2 变量名。
 
 变量名：静态常量使用大写字母，使用下划线“_”分词。
 非静态成员变量、局部变量、首字母小写，驼峰式分词。
 Activity、Fragment、Adapter、View 的子类的成员变量：m开头、驼峰式分词。
 方法名：首字母小写，驼峰式分词。
+
+
 1.3 成员变量定义顺序（建议）
 
 公用静态常量
@@ -18,6 +21,7 @@ Activity、Fragment、Adapter、View 的子类的成员变量：m开头、驼峰
 私用静态常量
 私用静态变量
 私有非静态变量
+
 1.4 禁止”魔术数”：
 
 switch(i) {
@@ -33,6 +37,7 @@ switch(i) {
    // ....
   break;
 }
+
 代码中的 case 后的数字即为魔术数，应该使用有明示意义的常量代替。
 
 1.5 禁止忽略异常：
@@ -72,6 +77,7 @@ if 嵌套层次：不要超过4层。
 例如：
 
  activity_main, fragment_user,dialog_login_input.xml
+ 
 2.2 控件布局命名：模块名＋布局类型，小写字母使用下划线 ”_ ”分词。例如：goods_list_item。
 
 2.3 图片资源
@@ -98,5 +104,3 @@ Divider	divider_	divider_grey
 2.4 其他
 
 避免使用"px"作为单位。
-
-项目成员
